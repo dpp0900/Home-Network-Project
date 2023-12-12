@@ -1,0 +1,19 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	local.kr. root.local.kr. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	local.kr.
+@	IN	A	127.0.0.1
+c2951k9	IN	A	192.168.99.1
+c3560v2 IN	A	192.168.99.2
+c2960x  IN	A	192.168.99.3
+dns	IN	A	192.168.8.8
+proxmox	IN	A	192.168.101.254
+dpp.ubuntu IN	A	192.168.101.100
